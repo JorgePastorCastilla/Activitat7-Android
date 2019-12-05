@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public void onViSeleccionat(String vi) {
         // Mirar l'orientació
-        boolean
-                horitzontal=getResources().getBoolean(R.bool.modeHoritzontal);
+        boolean horitzontal=getResources().getBoolean(R.bool.modeHoritzontal);
         if(horitzontal) {
             // estam en horitzontal
             ((DetallFragment) getSupportFragmentManager()

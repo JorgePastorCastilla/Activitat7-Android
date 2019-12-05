@@ -42,8 +42,9 @@ public class LlistaFragment extends Fragment {
         public void onItemClick(AdapterView<?> list, View view, int pos,
                                 long id) {
             if (listener!=null) {
-                listener.onViSeleccionat((String)
-                        list.getAdapter().getItem(pos));
+                //listener.onViSeleccionat((String)
+                 //       list.getAdapter().getItem(pos));
+                listener.onViSeleccionat(llista.get(pos));
                 // o també listener.onViSeleccionat(llista.get(pos))
             }
         }
