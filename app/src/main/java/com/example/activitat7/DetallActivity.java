@@ -18,5 +18,8 @@ public class DetallActivity extends AppCompatActivity {
             TextView textElement = findViewById(R.id.Texto);
             textElement.setText(extras.getString("nomvi"));
         }
+
+
+
     }
 }
