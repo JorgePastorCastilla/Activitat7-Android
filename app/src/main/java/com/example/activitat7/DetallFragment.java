@@ -16,6 +16,13 @@ public class DetallFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
+
+        return inflater.inflate(R.layout.activity_detall, container, false);
+    }
+    public void mostrarDetall(String vi){
+        TextView textView = getView().findViewById(R.id.Texto);
+        textView.setText(vi);
+
         // layout de la llista
         Button botomp3 = getActivity().findViewById(R.id.btnMP3);
         botomp3.setOnClickListener(new Button.OnClickListener(){
@@ -33,10 +40,5 @@ public class DetallFragment extends Fragment {
             }
         });
 
-        return inflater.inflate(R.layout.activity_detall, container, false);
-    }
-    public void mostrarDetall(String vi){
-        TextView textView = getView().findViewById(R.id.Texto);
-        textView.setText(vi);
     }
 }

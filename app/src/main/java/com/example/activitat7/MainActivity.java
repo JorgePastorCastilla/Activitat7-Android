@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity implements
         boolean horitzontal=getResources().getBoolean(R.bool.modeHoritzontal);
         if(horitzontal) {
             // estam en horitzontal
-            ((DetallFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.FrgDetall)).mostrarDetall(vi);
+            ((DetallFragment) getSupportFragmentManager().findFragmentById(R.id.FrgDetall)).mostrarDetall(vi);
 
         }
         else {
